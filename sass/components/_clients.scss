@@ -1,0 +1,37 @@
+.clients__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.clients {
+    background-color: var(--card-bg-cl);
+}
+    
+.clients__icon {
+    fill: currentColor;
+    display: flex;
+    width: 106px;
+    height: 60px;
+}
+    
+.clients__link {
+    color: var(--social-links);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--social-links);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+&:hover,
+&:focus {
+    color: var(--span-bg-cl);
+    border-color: var(--span-bg-cl);
+}
+}
